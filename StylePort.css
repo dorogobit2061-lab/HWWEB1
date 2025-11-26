@@ -7,3 +7,95 @@ footer p{
 footer h2{
   color: white;
 }
+footer.footer div.containeralt h2 {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 26px;
+
+  line-height: 100%;
+
+  letter-spacing: 3%;
+}
+footer.footer div.containeralt p {
+    font-family: "Roboto", sans-serif;
+
+  font-weight: 400;
+
+  font-size: 14px;
+
+  line-height: 24px;
+
+  letter-spacing: 3%;
+}
+figure figcaption {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 400;
+
+  font-size: 16px;
+
+  line-height: 30px;
+
+  letter-spacing: 3%;
+
+} 
+figure p {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 18px;
+
+  line-height: 36px;
+
+  letter-spacing: 6%;
+}
+nav.Item a {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 500;
+
+  font-size: 16px;
+
+  line-height: 26px;
+
+  letter-spacing: 3%;
+
+  text-align: center;
+}
+div.help a {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 500;
+
+  font-size: 14px;
+
+  line-height: 100%;
+
+  letter-spacing: 2%;
+
+}
+footer.footer div.containeralt h2 {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 26px;
+
+  line-height: 100%;
+
+  letter-spacing: 3%;
+}
+header.header div.container {
+ font-family: "Roboto", sans-serif;
+
+  font-weight: 700;
+
+  font-size: 26px;
+
+  line-height: 100%;
+
+  letter-spacing: 3%;
+}
