@@ -7,65 +7,127 @@ footer p{
 footer h2{
   color: white;
 }
-
-
-.footer .footer-container .footer-title {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1;
-  letter-spacing: 3%;
+:root {
+--font-main: "Roboto", sans-serif;
+--color-dark: #000;
+--color-light: #fff;
+--letter-3: 3%;
+--letter-6: 6%;
 }
 
-.footer .footer-container .footer-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 3%;
+body {
+font-family: var(--font-main);
+margin: 0;
+padding: 0;
 }
 
-.gallery-figure_caption {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 3%;
+.header-container {
+font-weight: 700;
+font-size: 26px;
+letter-spacing: var(--letter-3);
 }
 
-.gallery-figure_title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 6%;
+.header-link {
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 2%;
+margin-right: 20px;
 }
 
-.header-help_link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 2%;
-  margin-right: 20px;
+.header-link:last-child {
+margin-right: 0;
 }
 
-.header-help_link:last-child {
-  margin-right: 0;
+.filter-link {
+font-weight: 500;
+font-size: 16px;
+letter-spacing: var(--letter-3);
+margin-right: 20px;
 }
 
-.header-nav_item a,
-.header-nav_link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 3%;
-  text-align: center;
-  margin-right: 20px;
+.filter-link:last-child {
+margin-right: 0;
 }
 
-.header-nav_link:last-child {
-  margin-right: 0;
+.gallery-caption {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: var(--letter-3);
 }
 
-.header .header_container {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1;
-  letter-spacing: 3%;
+.gallery-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: var(--letter-6);
+}
+
+footer {
+background-color: var(--color-dark);
+}
+
+footer p,
+footer h2 {
+color: var(--color-light);
+}
+
+.footer-title {
+font-weight: 700;
+font-size: 26px;
+letter-spacing: var(--letter-3);
+}
+
+.footer-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: var(--letter-3);
+}
+
+.team {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 20px;
+padding-bottom: 60px;
+}
+
+.team-card {
+flex: 1 1 calc(23% - 20px);
+max-width: 23%;
+text-align: center;
+}
+
+.team-card img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 8px;
+}
+
+.team-card figcaption {
+margin-top: 10px;
+}
+
+.hero {
+padding: 120px 0;
+background: #000;
+text-align: center;
+}
+
+.hero-title {
+font-family: "Montserrat", sans-serif;
+font-size: 32px;
+margin-bottom: 20px;
+color: var(--color-light);
+}
+
+.hero-button {
+padding: 12px 32px;
+border: none;
+background: #2196f3;
+color: var(--color-light);
+cursor: pointer;
+border-radius: 4px;
 }
