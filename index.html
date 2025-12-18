@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet" />
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>WebStudio</title>
   </head>
@@ -25,23 +25,21 @@
             <li><a class="nav-link" href="index.html">Студія</a></li>
             <li><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
             <li><a class="nav-link" href="#">Контакти</a></li>
-            <li><a class="nav-link" href="#">Пошта</a></li>
-            <li><a class="nav-link" href="#">Телефон</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-content">
-          <h2 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h2>
-          <button class="hero-button">Замовити послугу</button>
+      <section class="container">
+        <div class="container-content">
+          <h2 class=" container-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h2>
+          <button class="container-button">Замовити послугу</button>
         </div>
       </section>
 
-      <section class="advantages">
-        <ul class="advantages-list container">
+      <section class="advantages"> 
+        <ul class="container advantages-list">
           <li class="adv-item">
             <h3 class="adv-title">Увага до деталей</h3>
             <p class="adv-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -68,16 +66,18 @@
         <h2 class="section-title">Чим ми займаємося</h2>
 
         <div class="container work-images">
-          <img src="./img/img (4).jpg" width="370" height="294" alt="Створення сайту" />
-          <img src="./img/img (11).png" width="370" height="294" alt="Розробка інтерфейсу" />
-          <img src="./img/img (5).jpg" width="370" height="294" alt="Дизайн сайту" />
+          <ul class="work-list">
+         <li class="work-item"><img src="./img/img (4).jpg" width="370" height="294" alt="Створення сайту" /></li>
+          <li class="work-item"><img src="./img/img (11).png" width="370" height="294" alt="Розробка інтерфейсу" /></li>
+          <li class="work-item"><img src="./img/img (5).jpg" width="370" height="294" alt="Дизайн сайту" /></li>
+          </ul>
         </div>
       </section>
 
       <section class="team-section">
         <h2 class="section-title">Наша команда</h2>
 
-        <div class="container team">
+        <div class="container-team">
           <figure class="team-card">
             <img src="./img/img.jpg" alt="Фото Ігоря" />
             <figcaption>

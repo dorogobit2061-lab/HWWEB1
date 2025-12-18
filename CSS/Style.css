@@ -143,8 +143,35 @@ body {
   text-align: left;
   padding: 40px 0;
 }
-
-
-
-
-
+.container-footer-section {
+  max-width: 696px;      
+  width: 90%;             
+  margin-left: auto;      
+  margin-right: auto;     
+  padding-left: 15px;     
+  padding-right: 15px;
+}
+.container-team {
+  max-width: 696px;      
+  width: 90%;             
+  margin-left: auto;      
+  margin-right: auto;     
+  padding-left: 15px;     
+  padding-right: 15px;
+}
+.container-work-images {
+  max-width: 370px;      
+  width: 90%;             
+  margin-left: 615px;      
+  margin-right: auto;     
+  padding-left: 15px;     
+  padding-right: 15px;
+}
+.container-advantages-list {
+  max-width: 270px;      
+  width: 16xp;             
+  margin-left: auto;      
+  margin-right: auto;     
+  padding-left: 15px;     
+  padding-right: 15px;
+}
