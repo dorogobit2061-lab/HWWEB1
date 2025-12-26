@@ -171,3 +171,37 @@ body {
     padding-top: 60px;   
   padding-bottom: 60px;
 }
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+.container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+.container-team {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.address-content {
+  display: flex;
+  flex-direction: column;
+}
+
