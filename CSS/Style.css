@@ -171,37 +171,36 @@ body {
     padding-top: 60px;   
   padding-bottom: 60px;
 }
-
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-list {
-  display: flex;
+.nav-main{
+    display: flex;
+  justify-content: center;
   gap: 30px;
 }
 .container-content {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+}
+.container-content{ 
+  background-color: #000;
+}
+.container-title {
+ align-items: center;
+}
+.container-button {
   align-items: center;
 }
-.advantages-list {
+.advantages {
   display: flex;
   gap: 30px;
+}
+.container-title {
+ color: #fff;
 }
 .work-list {
   display: flex;
-  gap: 30px;
+  gap: 10px;
 }
 .container-team {
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  gap: 10px;
+  
 }
-.address-content {
-  display: flex;
-  flex-direction: column;
-}
-
