@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="./CSS/StylePort.css" />
-    <title>WebStudio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>WebStudio</title>
 
-  <body>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./CSS/StylePort.css">
+</head>
 
-    <header class="header">
-      <div class="header-container">
-        <h1 class="header-title">WebStudio</h1>
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="header-title">WebStudio</h1>
+
+    <nav class="header-nav">
+      <div class="header-links">
+        <a class="header-link" href="index.html">Студія</a>
+        <a class="header-link" href="portfolio.html">Портфоліо</a>
+        <a class="header-link" href="#">Контакти</a>
       </div>
+    </nav>
+  </div>
+</header>
 
-      <nav class="header-nav">
-        <div class="header-links">
-          <a class="header-link" href="index.html">Студія</a>
-          <a class="header-link" href="portfolio.html">Портфоліо</a>
-          <a class="header-link" href="#">Контакти</a>
-        </div>
+<main class="main">
 
-        <div class="filter-nav">
-          <a class="filter-link" href="#">Усі</a>
-          <a class="filter-link" href="#">Веб-сайти</a>
-          <a class="filter-link" href="#">Додатки</a>
-          <a class="filter-link" href="#">Дизайн</a>
-          <a class="filter-link" href="#">Маркетинг</a>
-        </div>
+  <section class="filters">
+    <div class="container">
+      <nav class="filter-nav">
+        <a class="filter-link" href="#">Усі</a>
+        <a class="filter-link" href="#">Веб-сайти</a>
+        <a class="filter-link" href="#">Додатки</a>
+        <a class="filter-link" href="#">Дизайн</a>
+        <a class="filter-link" href="#">Маркетинг</a>
       </nav>
-    </header>
+    </div>
+  </section>
 
-    <main>
+  <section class="portfolio">
+    <div class="container">
       <ul class="gallery-list">
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (8).png" />
+            <img class="gallery-img" src="./img/img (8).png" alt="Технокряк">
             <p class="gallery-title">Технокряк</p>
             <figcaption class="gallery-caption">Веб-сайт</figcaption>
           </figure>
@@ -45,7 +53,7 @@
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (1).png"  />
+            <img class="gallery-img" src="./img/img (1).png" alt="Постер">
             <p class="gallery-title">Постер New Orlean vs Golden Star</p>
             <figcaption class="gallery-caption">Дизайн</figcaption>
           </figure>
@@ -53,7 +61,7 @@
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (2).png" />
+            <img class="gallery-img" src="./img/img (2).png" alt="Ресторан">
             <p class="gallery-title">Ресторан Seafood</p>
             <figcaption class="gallery-caption">Додаток</figcaption>
           </figure>
@@ -61,7 +69,7 @@
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (3).png" />
+            <img class="gallery-img" src="./img/img (3).png" alt="Prime">
             <p class="gallery-title">Проєкт Prime</p>
             <figcaption class="gallery-caption">Маркетинг</figcaption>
           </figure>
@@ -69,15 +77,15 @@
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (4).png"  />
+            <img class="gallery-img" src="./img/img (4).png" alt="Boxes">
             <p class="gallery-title">Проєкт Boxes</p>
             <figcaption class="gallery-caption">Маркетинг</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item"> 
+        <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (5).png"  />
+            <img class="gallery-img" src="./img/img (5).png" alt="Inspiration">
             <p class="gallery-title">Inspiration has no Borders</p>
             <figcaption class="gallery-caption">Веб-сайт</figcaption>
           </figure>
@@ -85,7 +93,7 @@
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (9).png"  />
+            <img class="gallery-img" src="./img/img (9).png" alt="Limited Edition">
             <p class="gallery-title">Видання Limited Edition</p>
             <figcaption class="gallery-caption">Дизайн</figcaption>
           </figure>
@@ -93,7 +101,7 @@
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (6).png"/>
+            <img class="gallery-img" src="./img/img (6).png" alt="LAB">
             <p class="gallery-title">Проєкт LAB</p>
             <figcaption class="gallery-caption">Маркетинг</figcaption>
           </figure>
@@ -101,23 +109,26 @@
 
         <li class="gallery-item">
           <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (7).png"  />
+            <img class="gallery-img" src="./img/img (7).png" alt="Growing Business">
             <p class="gallery-title">Growing Business</p>
             <figcaption class="gallery-caption">Додаток</figcaption>
           </figure>
         </li>
 
       </ul>
-    </main>
+    </div>
+  </section>
 
-    <footer class="address">
-      <div class="address-container">
-        <h2 class="address-title">WebStudio</h2>
-        <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
-        <p class="address-text">info@devstudio.com</p>
-        <p class="address-text">+38 096 111 11 11</p>
-      </div>
-    </footer>
+</main>
 
-  </body>
+<footer class="footer">
+  <div class="container">
+    <h2 class="footer-title">WebStudio</h2>
+    <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+    <p class="footer-text">info@devstudio.com</p>
+    <p class="footer-text">+38 096 111 11 11</p>
+  </div>
+</footer>
+
+</body>
 </html>

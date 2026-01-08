@@ -4,14 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="./CSS/Style.css" />
+
     <title>WebStudio</title>
   </head>
 
@@ -19,8 +17,7 @@
     <header class="site-header">
       <div class="container header-wrapper">
         <h1 class="logo">WebStudio</h1>
-
-        <nav class="nav-main">
+        <nav>
           <ul class="nav-list">
             <li><a class="nav-link" href="index.html">Студія</a></li>
             <li><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
@@ -31,91 +28,101 @@
     </header>
 
     <main>
-      <section class="container">
-        <div class="container-content">
-          <h2 class=" container-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h2>
+      <section class="hero">
+        <div class="container container-content">
+          <h2 class="container-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h2>
           <button class="container-button">Замовити послугу</button>
         </div>
       </section>
 
-      <section class="advantages"> 
-        <ul class="container advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-title">Увага до деталей</h3>
-            <p class="adv-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-          </li>
-
-          <li class="advantages-item">
-            <h3 class="advantages-title">Пунктуальність</h3>
-            <p class="adv-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-          </li>
-
-          <li class="advantages-item">
-            <h3 class="advantages-title">Планування</h3>
-            <p class="adv-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-          </li>
-
-          <li class="advantages-item">
-            <h3 class="advantages-title">Сучасні технології</h3>
-            <p class="adv-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-          </li>
-        </ul>
+      <section class="advantages">
+        <div class="container">
+          <ul class="advantages-list">
+            <li>
+              <h3>Увага до деталей</h3>
+              <p>
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li>
+              <h3>Пунктуальність</h3>
+              <p>
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li>
+              <h3>Планування</h3>
+              <p>
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <h3>Сучасні технології</h3>
+              <p>
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="work-section">
-        <h2 class="section-title">Чим ми займаємося</h2>
-
-        <div class="container work-images">
+        <div class="container">
+          <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
-         <li class="work-item"><img src="./img/img (4).jpg" width="370" height="294" alt="Створення сайту" /></li>
-          <li class="work-item"><img src="./img/img (11).png" width="370" height="294" alt="Розробка інтерфейсу" /></li>
-          <li class="work-item"><img src="./img/img (5).jpg" width="370" height="294" alt="Дизайн сайту" /></li>
+            <li><img src="./img/img (4).jpg" alt="" /></li>
+            <li><img src="./img/img (11).png" alt="" /></li>
+            <li><img src="./img/img (5).jpg" alt="" /></li>
           </ul>
         </div>
       </section>
 
       <section class="team-section">
-        <h2 class="section-title">Наша команда</h2>
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <div class="container-team">
+            <figure class="team-card">
+              <img src="./img/img.jpg" alt="" />
+              <figcaption>
+                <h3>Ігор Дем'яненко</h3>
+                <p>Product Designer</p>
+              </figcaption>
+            </figure>
 
-        <div class="container-team">
-          <figure class="team-card">
-            <img src="./img/img.jpg" alt="Фото Ігоря" />
-            <figcaption>
-              <h3>Ігор Дем'яненко</h3>
-              <p>Product Designer</p>
-            </figcaption>
-          </figure>
+            <figure class="team-card">
+              <img src="./img/img (1).jpg" alt="" />
+              <figcaption>
+                <h3>Ольга Рєпіна</h3>
+                <p>Frontend Developer</p>
+              </figcaption>
+            </figure>
 
-          <figure class="team-card">
-            <img src="./img/img (1).jpg" alt="Фото Ольги" />
-            <figcaption>
-              <h3>Ольга Рєпіна</h3>
-              <p>Frontend Developer</p>
-            </figcaption>
-          </figure>
+            <figure class="team-card">
+              <img src="./img/img (2).jpg" alt="" />
+              <figcaption>
+                <h3>Микола Тарасов</h3>
+                <p>Marketing</p>
+              </figcaption>
+            </figure>
 
-          <figure class="team-card">
-            <img src="./img/img (2).jpg" alt="Фото Миколи" />
-            <figcaption>
-              <h3>Микола Тарасов</h3>
-              <p>Marketing</p>
-            </figcaption>
-          </figure>
-
-          <figure class="team-card">
-            <img src="./img/img (3).jpg" alt="Фото Михайла" />
-            <figcaption>
-              <h3>Михайло Єрмаков</h3>
-              <p>UI Designer</p>
-            </figcaption>
-          </figure>
+            <figure class="team-card">
+              <img src="./img/img (3).jpg" alt="" />
+              <figcaption>
+                <h3>Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="address">
-      <div class="container address-content">
-        <h2 class="address-logo">WebStudio</h2>
+      <div class="container">
+        <h2>WebStudio</h2>
         <p>м. Київ, пр-т Лесі Українки, 26</p>
         <p>info@devstudio.com</p>
         <p>+38 096 111 11 11</p>
@@ -123,4 +130,3 @@
     </footer>
   </body>
 </html>
-
