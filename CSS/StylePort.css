@@ -122,3 +122,8 @@ body {
   letter-spacing: var(--letter-3);
   color: var(--color-light);
 }
+.gallery-item:nth-child(1) {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
