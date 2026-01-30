@@ -126,7 +126,7 @@ body {
       rgba(76, 76, 77, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/img/fon.png");
+    url(../img/fon.png);
 
   background-repeat: no-repeat;
   background-position: center;
