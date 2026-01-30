@@ -121,19 +121,17 @@ body {
   content: url(../img/s1.png);
 }
 .hero {
-  padding: 200px 0;
-  text-align: center;
-
   background-image:
     linear-gradient(
       rgba(76, 76, 77, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/img/fon.png)
+    url("/img/fon.png");
 
   background-repeat: no-repeat;
   background-position: center;
-   min-height: 200px;         
+  min-height: 200px;
   padding: 120px 0;
-   background-size: 50%;
+  background-size: 50%;
 }
+
