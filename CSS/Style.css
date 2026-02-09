@@ -125,13 +125,12 @@ body {
     linear-gradient(
       rgba(76, 76, 77, 0.4),
       rgba(47, 48, 58, 0.4)
-    );
+    ),
+    url("/img/Fon.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 200px;
   padding: 120px 0;
   background-size: auto;
-  background-image: url("/img/Fon.png");
-
 }
 
