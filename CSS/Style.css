@@ -380,3 +380,62 @@ body {
 .footer-list li:hover svg {
   fill: rgb(0, 0, 0);
 }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  padding: 10px;
+}
+
+.send-btn {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+}
+
+.subscribe-form button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px;
+}
