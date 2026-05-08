@@ -6,7 +6,7 @@
   --letter-6: 0.06em;
 }
 
-body {
+.body-portfolio {
   font-family: var(--font-main);
   margin: 0;
   padding: 0;
