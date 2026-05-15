@@ -1,0 +1,136 @@
+@use "../utils/placeholders";
+@use "../utils/mixins";
+.hero {
+  background-color: #000;
+  text-align: center;
+  background-image: linear-gradient(rgba(76, 76, 77, 0.4), rgba(47, 48, 58, 0.4)), url("/img/fon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  padding: 120px 0;
+  background-size: auto;
+}
+.container__title {
+  color: #fff;
+  animation: appearance 1s ease-out;
+}
+.advantages {
+  padding: 60px 0;
+  img {
+    width: 270px;
+    height: 224px;
+    top: 774px;
+    left: 515px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.work__section {
+  padding: 60px 0;
+}
+.work__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.work__item {
+  position: relative;
+  width: 370px;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__section {
+  padding: 60px 0;
+  background: #f3f3f6;
+}
+.container__team {
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.team__item {
+  width: 270px;
+  background: white;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  img {
+    width: 100%;
+  }
+}
+.team__card {
+  width: 195px;
+  background: white;
+  border: 1px solid #f8f3f3;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  figcaption {
+    text-align: center;
+    padding: 15px;
+  }
+  h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  p {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+.clients__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  li {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+.clients__item img {
+  width: 106px;
+  height: 60px;
+}

@@ -6,21 +6,20 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="main.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body class="body-portfolio">
+<body class="body--portfolio">
 
 <header class="header">
   <div class="container">
-    <h1 class="header-title">WebStudio</h1>
+    <h1 class="header__title">WebStudio</h1>
 
-    <nav class="header-nav">
-      <div class="header-links">
-        <a class="header-link" href="index.html">Студія</a>
-        <a class="header-link" href="portfolio.html">Портфоліо</a>
-        <a class="header-link" href="#">Контакти</a>
-      
+    <nav class="header__nav">
+      <div class="header__links">
+        <a class="header__link" href="index.html">Студія</a>
+        <a class="header__link header__link--active" href="portfolio.html">Портфоліо</a>
+        <a class="header__link" href="#">Контакти</a>
       </div>
     </nav>
   </div>
@@ -31,97 +30,110 @@
   <section class="filters">
     <div class="container">
       <nav class="filter-nav">
-        <a class="filter-link" href="#">Усі</a>
-        <a class="filter-link" href="#">Веб-сайти</a>
-        <a class="filter-link" href="#">Додатки</a>
-        <a class="filter-link" href="#">Дизайн</a>
-        <a class="filter-link" href="#">Маркетинг</a>
+        <a class="filter-nav__link" href="#">Усі</a>
+        <a class="filter-nav__link" href="#">Веб-сайти</a>
+        <a class="filter-nav__link" href="#">Додатки</a>
+        <a class="filter-nav__link" href="#">Дизайн</a>
+        <a class="filter-nav__link" href="#">Маркетинг</a>
       </nav>
     </div>
+  </section>
 
   <section class="portfolio">
     <div class="container">
-      <ul class="gallery-list">
+      <ul class="gallery__list">
 
-       <li class="gallery-item">
-  <figure class="gallery-figure">
-
-    <div class="gallery-thumb">
-      <img class="gallery-img" src="./img/img (15).jpg" alt="Технокряк">
-
-      <p class="gallery-overlay">
- Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-      </p>
-    </div>
-
-    <p class="gallery-title">Технокряк</p>
-    <figcaption class="gallery-caption">Веб-сайт</figcaption>
-
-  </figure>
-</li>
-
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (16).jpg" alt="Постер">
-            <p class="gallery-title">Постер New Orlean vs Golden Star</p>
-            <figcaption class="gallery-caption">Дизайн</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (15).jpg" alt="Технокряк">
+              <p class="gallery__overlay">
+                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+              </p>
+            </div>
+            <p class="gallery__title">Технокряк</p>
+            <figcaption class="gallery__caption">Веб-сайт</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (17).jpg" alt="Ресторан">
-            <p class="gallery-title">Ресторан Seafood</p>
-            <figcaption class="gallery-caption">Додаток</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (16).jpg" alt="Постер">
+            </div>
+            <p class="gallery__title">Постер New Orlean vs Golden Star</p>
+            <figcaption class="gallery__caption">Дизайн</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (18) (1).jpg" alt="Prime">
-            <p class="gallery-title">Проєкт Prime</p>
-            <figcaption class="gallery-caption">Маркетинг</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (17).jpg" alt="Ресторан">
+            </div>
+            <p class="gallery__title">Ресторан Seafood</p>
+            <figcaption class="gallery__caption">Додаток</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (19).jpg" alt="Boxes">
-            <p class="gallery-title">Проєкт Boxes</p>
-            <figcaption class="gallery-caption">Маркетинг</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (18) (1).jpg" alt="Prime">
+            </div>
+            <p class="gallery__title">Проєкт Prime</p>
+            <figcaption class="gallery__caption">Маркетинг</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (20).jpg" alt="Inspiration">
-            <p class="gallery-title">Inspiration has no Borders</p>
-            <figcaption class="gallery-caption">Веб-сайт</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (19).jpg" alt="Boxes">
+            </div>
+            <p class="gallery__title">Проєкт Boxes</p>
+            <figcaption class="gallery__caption">Маркетинг</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (21).jpg" alt="Limited Edition">
-            <p class="gallery-title">Видання Limited Edition</p>
-            <figcaption class="gallery-caption">Дизайн</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (20).jpg" alt="Inspiration">
+            </div>
+            <p class="gallery__title">Inspiration has no Borders</p>
+            <figcaption class="gallery__caption">Веб-сайт</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (22).jpg" alt="LAB">
-            <p class="gallery-title">Проєкт LAB</p>
-            <figcaption class="gallery-caption">Маркетинг</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (21).jpg" alt="Limited Edition">
+            </div>
+            <p class="gallery__title">Видання Limited Edition</p>
+            <figcaption class="gallery__caption">Дизайн</figcaption>
           </figure>
         </li>
 
-        <li class="gallery-item">
-          <figure class="gallery-figure">
-            <img class="gallery-img" src="./img/img (23).jpg" alt="Growing Business">
-            <p class="gallery-title">Growing Business</p>
-            <figcaption class="gallery-caption">Додаток</figcaption>
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (22).jpg" alt="LAB">
+            </div>
+            <p class="gallery__title">Проєкт LAB</p>
+            <figcaption class="gallery__caption">Маркетинг</figcaption>
+          </figure>
+        </li>
+
+        <li class="gallery__item">
+          <figure class="gallery__figure">
+            <div class="gallery__thumb">
+              <img class="gallery__img" src="./img/img (23).jpg" alt="Growing Business">
+            </div>
+            <p class="gallery__title">Growing Business</p>
+            <figcaption class="gallery__caption">Додаток</figcaption>
           </figure>
         </li>
 
@@ -133,10 +145,10 @@
 
 <footer class="footer">
   <div class="container">
-    <h2 class="footer-title">WebStudio</h2>
-    <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
-    <p class="footer-text">info@devstudio.com</p>
-    <p class="footer-text">+38 096 111 11 11</p>
+    <h2 class="footer__title">WebStudio</h2>
+    <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
+    <p class="footer__text">info@devstudio.com</p>
+    <p class="footer__text">+38 096 111 11 11</p>
   </div>
 </footer>
 

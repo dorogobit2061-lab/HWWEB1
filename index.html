@@ -8,28 +8,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="main.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
 
     <title>WebStudio</title>
   </head>
 
   <body class="body">
-    <header class="site-header">
-      <div class="container header-wrapper">
+    <header class="site__header">
+      <div class="container header__wrapper">
         <h1 class="logo">WebStudio</h1>
         <nav>
-          <ul class="nav-list">
-            <li><a class="nav-link" href="index.html">Студія</a></li>
-            <li><a class="nav-link" href="portfolio.html">Портфоліо</a></li>
-            <li><a class="nav-link" href="#">Контакти</a></li>
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Студія</a></li>
+            <li><a class="nav__link" href="portfolio.html">Портфоліо</a></li>
+            <li><a class="nav__link" href="#">Контакти</a></li>
             <li>
-              <a class="nav-link" href="#">
+              <a class="nav__link" href="#">
                 <img src="./img/envelope (hover) (3).svg" alt="">
                 info@devstudio.com
               </a>
             </li>
             <li>
-              <a class="nav-link" href="#">
+              <a class="nav__link" href="#">
                 <img src="./img/smartphone.svg" alt="">
                 +38 096 111 11 11
               </a>
@@ -41,11 +41,11 @@
 
     <main>
       <section class="hero">
-        <div class="container container-content">
-          <h2 class="container-title">
+        <div class="container container__content">
+          <h2 class="container__title">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
           </h2>
-          <button class="container-button" data-modal-open>
+          <button class="container__button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -53,7 +53,7 @@
 
       <section class="advantages">
         <div class="container">
-          <ul class="advantages-list">
+          <ul class="advantages__list">
             <li>
               <h3>Увага до деталей</h3>
               <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -74,20 +74,20 @@
         </div>
       </section>
 
-      <section class="work-section">
+      <section class="work__section">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
+          <h2 class="section__title">Чим ми займаємося</h2>
 
-          <ul class="work-list">
-            <li class="work-item">
+          <ul class="work__list">
+            <li class="work__item">
               <img src="./img/box 1.jpg" alt="">
               <p class="overlay">ДЕСКТОПНІ ДОДАТКИ</p>
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <img src="./img/img (13).jpg" alt="">
               <p class="overlay">МОБІЛЬНІ ДОДАТКИ</p>
             </li>
-            <li class="work-item">
+            <li class="work__item">
               <img src="./img/img (14).jpg" alt="">
               <p class="overlay">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
             </li>
@@ -95,16 +95,16 @@
         </div>
       </section>
 
-     <section class="team-section">
+     <section class="team__section">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <div class="container-team">
-            <figure class="team-card">
+          <h2 class="section__title">Наша команда</h2>
+          <div class="container__team">
+            <figure class="team__card">
               <img src="./img/img.jpg" alt="" />
               <figcaption>
                 <h3>Ігор Дем'яненко</h3>
                 <p>Product Designer</p>
-                <ul class="social-list">
+                <ul class="social__list">
                   <li>
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-instagram"></use>
@@ -129,12 +129,12 @@
               </figcaption>
             </figure>
 
-            <figure class="team-card">
+            <figure class="team__card">
               <img src="./img/img (1).jpg" alt="" />
               <figcaption>
                 <h3>Ольга Рєпіна</h3>
                 <p>Frontend Developer</p>
-                <ul class="social-list">
+                <ul class="social__list">
                   <li>
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-instagram"></use>
@@ -159,12 +159,12 @@
               </figcaption>
             </figure>
 
-            <figure class="team-card">
+            <figure class="team__card">
               <img src="./img/img (2).jpg" alt="" />
               <figcaption>
                 <h3>Микола Тарасов</h3>
                 <p>Marketing</p>
-                <ul class="social-list">
+                <ul class="social__list">
                   <li>
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-instagram"></use>
@@ -189,12 +189,12 @@
               </figcaption>
             </figure>
 
-            <figure class="team-card">
+            <figure class="team__card">
               <img src="./img/img (3).jpg" alt="" />
               <figcaption>
                 <h3>Михайло Єрмаков</h3>
                 <p>UI Designer</p>
-                <ul class="social-list">
+                <ul class="social__list">
                   <li>
                     <svg>
                       <use href="./img/symbol-defs.svg#icon-instagram"></use>
@@ -224,22 +224,22 @@
     </main>
 
     <section class="clients">
-      <div class="clients-div">
-        <h2 class="section-title">Постійні клієнти</h2>
-        <ul class="clients-list">
-          <li class="clients-item"><img src="./img/Logo.svg" alt=""></li>
-          <li class="clients-item"><img src="./img/Logo-1.svg" alt=""></li>
-          <li class="clients-item"><img src="./img/Logo-2.svg" alt=""></li>
-          <li class="clients-item"><img src="./img/Logo (6).svg" alt=""></li>
-          <li class="clients-item"><img src="./img/Logo-4.svg" alt=""></li>
-          <li class="clients-item"><img src="./img/Logo-5.svg" alt=""></li>
+      <div class="clients__div">
+        <h2 class="section__title">Постійні клієнти</h2>
+        <ul class="clients__list">
+          <li class="clients__item"><img src="./img/Logo.svg" alt=""></li>
+          <li class="clients__item"><img src="./img/Logo-1.svg" alt=""></li>
+          <li class="clients__item"><img src="./img/Logo-2.svg" alt=""></li>
+          <li class="clients__item"><img src="./img/Logo (6).svg" alt=""></li>
+          <li class="clients__item"><img src="./img/Logo-4.svg" alt=""></li>
+          <li class="clients__item"><img src="./img/Logo-5.svg" alt=""></li>
         </ul>
       </div>
     </section>
 
 
     <footer class="address">
-      <section class="address-section">
+      <section class="address__section">
         <div class="container">
           <h2>WebStudio</h2>
           <p>м. Київ, пр-т Лесі Українки, 26</p>
@@ -248,10 +248,10 @@
         </div>
       </section>
 
-      <section class="footer-section">
-        <h2 class="footer-h2">Приєднуйтесь</h2>
+      <section class="footer__section">
+        <h2 class="footer__h2">Приєднуйтесь</h2>
 
-        <ul class="footer-list">
+        <ul class="footer__list">
           <li><svg><use href="./img/symbol-defs.svg#icon-instagram"></use></svg></li>
           <li><svg><use href="./img/symbol-defs.svg#icon-twitter"></use></svg></li>
           <li><svg><use href="./img/symbol-defs.svg#icon-facebook"></use></svg></li>
@@ -260,7 +260,7 @@
 
         <div class="subscribe">
           <p>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-          <form class="subscribe-form">
+          <form class="subscribe__form">
             <input type="email" placeholder="E-mail">
             <button type="submit">Підписатися</button>
           </form>
@@ -271,11 +271,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" data-modal-close>×</button>
+        <button class="close__btn" data-modal-close>×</button>
 
         <h3>Залиште свої дані, ми вам передзвонимо</h3>
 
-        <form class="modal-form">
+        <form class="modal__form">
           <input type="text" placeholder="Ім’я">
           <input type="tel" placeholder="Телефон">
           <input type="email" placeholder="Пошта">
@@ -286,7 +286,7 @@
                         Погоджуюсь з умовами
           </label>
 
-          <button type="submit" class="send-btn">
+          <button type="submit" class="send__btn">
             Відправити
           </button>
         </form>

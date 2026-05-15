@@ -18,18 +18,18 @@
   padding: 0 15px;
 }
 
-.site-header {
+.site__header {
   background-color: #fff;
   padding: 20px 0;
 }
 
-.header-wrapper {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -37,7 +37,7 @@
   padding: 0;
 }
 
-.nav-link {
+.nav__link {
   text-decoration: none;
   color: var(--dark);
   position: relative;
@@ -59,12 +59,12 @@
   background-size: auto;
 }
 
-.container-title {
+.container__title {
   color: #fff;
   animation: appearance 1s ease-out;
 }
 
-.container-button {
+.container__button {
   padding: 12px 32px;
   background: var(--accent-color);
   color: #fff;
@@ -84,7 +84,7 @@
   left: 515px;
 }
 
-.advantages-list {
+.advantages__list {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -92,23 +92,23 @@
   padding: 0;
 }
 
-.work-section {
+.work__section {
   padding: 60px 0;
 }
 
-.team-section {
+.team__section {
   padding: 60px 0;
   background: #f3f3f6;
 }
 
-.container-team {
+.container__team {
   display: flex;
   gap: 0px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.team-card {
+.team__card {
   width: 195px;
   background: white;
   border: 1px solid #f8f3f3;
@@ -118,38 +118,38 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-card:hover {
+.team__card:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.team-card img {
+.team__card img {
   width: 100%;
   display: block;
 }
 
-.team-card figcaption {
+.team__card figcaption {
   text-align: center;
   padding: 15px;
 }
 
-.team-card h3 {
+.team__card h3 {
   margin: 10px 0 5px;
   font-size: 18px;
 }
 
-.team-card p {
+.team__card p {
   color: grey;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.section-title {
+.section__title {
   text-align: center;
   font-family: var(--title-font);
   margin-bottom: 40px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -158,7 +158,7 @@
   justify-content: center;
 }
 
-.clients-list li {
+.clients__list li {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -168,29 +168,29 @@
   margin-bottom: 50px;
 }
 
-.clients-item img {
+.clients__item img {
   width: 106px;
   height: 60px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
   list-style: none;
 }
 
-.team-item {
+.team__item {
   width: 270px;
   background: white;
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.team-item img {
+.team__item img {
   width: 100%;
 }
 
-.social-list {
+.social__list {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -199,7 +199,7 @@
   padding-bottom: 20px;
 }
 
-.social-list li {
+.social__list li {
   width: 50px;
   height: 50px;
   background: #ffffff;
@@ -211,33 +211,33 @@
               border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list svg {
+.social__list svg {
   width: 20px;
   height: 20px;
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list li:hover {
+.footer__list li:hover {
   background: #2196f3;
   border-radius: 50%;
 }
 
-.social-list li:hover svg {
+.social__list li:hover svg {
   fill: #ffffff;
 }
 
-.nav-list li a {
+.nav__list li a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nav-list li a:hover {
+.nav__list li a:hover {
   color: var(--accent-color);
 }
 
-.footer-list {
+.footer__list {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -245,7 +245,7 @@
   padding: 0;
 }
 
-.footer-list li {
+.footer__list li {
   width: 40px;
   height: 40px;
   display: flex;
@@ -254,19 +254,19 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list li:hover {
+.footer__list li:hover {
   background-color: #2196f3;
   border-radius: 50%;
 }
 
-.footer-list svg {
+.footer__list svg {
   width: 20px;
   height: 20px;
   fill: black;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list li:hover svg {
+.footer__list li:hover svg {
   fill: rgb(0, 0, 0);
 }
 
@@ -280,12 +280,12 @@
   gap:120px;
 }
 
-.footer-section {
+.footer__section {
   margin-top:-10px;
   margin-left: 10px;
 }
 
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -293,12 +293,12 @@
   padding: 0;
 }
 
-.work-item {
+.work__item {
   position: relative;
   width: 370px;
 }
 
-.work-item img {
+.work__item img {
   width: 100%;
   display: block;
 }
@@ -317,26 +317,26 @@
 }
 
 
-.close-btn {
+.close__btn {
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
 }
 
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.modal-form input,
-.modal-form textarea {
+.modal__form input,
+.modal__form textarea {
   padding: 10px;
 }
 
-.send-btn,
-.subscribe-form button {
+.send__btn,
+.subscribe__form button {
   background: #2196f3;
   color: white;
   border: none;
@@ -351,13 +351,13 @@
   pointer-events: none;
 }
 
-.subscribe-form {
+.subscribe__form {
   display: flex;
   gap: 10px;
   margin-top: 10px;
 }
 
-.subscribe-form input {
+.subscribe__form input {
   padding: 10px;
 }
 
@@ -375,7 +375,7 @@ body a[href="index.html"]::after {
   background: #2196f3;
 }
 
-.nav-link::after {
+.nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -388,7 +388,7 @@ body a[href="index.html"]::after {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover::after {
+.nav__link:hover::after {
   transform: scaleX(1);
 }
 
@@ -414,7 +414,7 @@ body a[href="index.html"]::after {
   transform: translate(-50%, -50%) scale(0.5);
   opacity: 0;
 }
-.container-button:hover {
+.container__button:hover {
   animation: pulse 1s infinite; 
 }
 @keyframes appearance {
