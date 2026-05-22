@@ -1,5 +1,6 @@
 @use "../utils/placeholders";
 @use "../utils/mixins";
+
 .hero {
   background-color: #000;
   text-align: center;
@@ -15,7 +16,7 @@
   animation: appearance 1s ease-out;
 }
 .advantages {
-  padding: 60px 0;
+  @include mixins.section-padding();
   img {
     width: 270px;
     height: 224px;
@@ -23,22 +24,18 @@
     left: 515px;
   }
   &__list {
+    @extend %list;
     display: flex;
     gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 }
 .work__section {
-  padding: 60px 0;
+  @include mixins.section-padding();
 }
 .work__list {
+  @extend %list;
   display: flex;
   gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .work__item {
   position: relative;
@@ -58,10 +55,10 @@
   text-align: center;
   padding: 20px 0;
   margin: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include mixins.transition(transform);
 }
 .team__section {
-  padding: 60px 0;
+  @include mixins.section-padding();
   background: #f3f3f6;
 }
 .container__team {
@@ -71,9 +68,9 @@
   flex-wrap: wrap;
 }
 .team__list {
+  @extend %list;
   display: flex;
   gap: 30px;
-  list-style: none;
 }
 .team__item {
   width: 270px;
@@ -91,7 +88,7 @@
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include mixins.transition(box-shadow);
   &:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
@@ -114,19 +111,15 @@
   }
 }
 .clients__list {
+  @extend %list;
   display: flex;
   gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   justify-content: center;
   li {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     margin-bottom: 50px;
   }
 }

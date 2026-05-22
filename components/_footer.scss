@@ -1,5 +1,6 @@
 @use "../utils/placeholders";
 @use "../utils/mixins";
+
 .footer {
   padding: 40px 0;
   background-color: var(--color-dark);
@@ -21,18 +22,15 @@
     margin-left: 10px;
   }
   &__list {
+    @extend %list;
     display: flex;
     justify-content: center;
     gap: 10px;
-    list-style: none;
-    padding: 0;
     li {
       width: 40px;
       height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %flex-center;
+      @include mixins.transition(background-color);
       &:hover {
         background-color: #2196f3;
         border-radius: 50%;
@@ -45,7 +43,7 @@
       width: 20px;
       height: 20px;
       fill: black;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @include mixins.transition(fill);
     }
   }
 }

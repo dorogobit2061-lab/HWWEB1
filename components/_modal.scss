@@ -1,5 +1,5 @@
-@use "../utils/placeholders";
 @use "../utils/mixins";
+
 .modal {
   position: absolute;
   top: 50%;
@@ -10,7 +10,8 @@
   padding: 30px;
   width: 400px;
   border-radius: 10px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include mixins.transition(transform);
+  @include mixins.transition(opacity);
 }
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
@@ -37,6 +38,6 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include mixins.transition(background-color);
   }
 }
