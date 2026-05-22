@@ -1,8 +1,9 @@
 @use "../utils/mixins";
+@use "../utils/variables";
 
 .container__button {
   padding: 12px 32px;
-  background: var(--accent-color);
+  background: variables.$accent-color;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -18,7 +19,7 @@
   cursor: pointer;
 }
 .send__btn {
-  background: #2196f3;
+  background: variables.$accent-color;
   color: white;
   border: none;
   padding: 10px;

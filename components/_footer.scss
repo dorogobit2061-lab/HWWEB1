@@ -1,21 +1,22 @@
 @use "../utils/placeholders";
 @use "../utils/mixins";
+@use "../utils/variables";
 
 .footer {
   padding: 40px 0;
-  background-color: var(--color-dark);
+  background-color: variables.$color-dark;
   &__title {
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: var(--letter-3);
-    color: var(--color-light);
+    letter-spacing: variables.$letter-3;
+    color: variables.$color-light;
   }
   &__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: var(--letter-3);
-    color: var(--color-light);
+    letter-spacing: variables.$letter-3;
+    color: variables.$color-light;
   }
   &__section {
     margin-top: -10px;
@@ -32,7 +33,7 @@
       @extend %flex-center;
       @include mixins.transition(background-color);
       &:hover {
-        background-color: #2196f3;
+        background-color: variables.$accent-color;
         border-radius: 50%;
         svg {
           fill: rgb(0, 0, 0);

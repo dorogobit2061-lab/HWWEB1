@@ -1,5 +1,6 @@
 @use "../utils/placeholders";
 @use "../utils/mixins";
+@use "../utils/variables";
 
 .social__list {
   @extend %list;
@@ -17,7 +18,7 @@
     @include mixins.transition(background-color);
     @include mixins.transition(border-radius);
     &:hover {
-      background-color: var(--accent-color);
+      background-color: variables.$accent-color;
       box-shadow: 0px 0px 15px 5px rgba(33, 150, 243, 0.6);
       svg {
         fill: #ffffff;
