@@ -4,4 +4,27 @@
 
 @mixin section-padding() {
   padding: 60px 0;
+  @media (min-width: 1200px) {
+    padding: 90px 0;
+  }
+}
+
+@mixin mobile() {
+  @media (min-width: 480px) { @content; }
+}
+
+@mixin tablet() {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin desktop() {
+  @media (min-width: 1200px) { @content; }
+}
+
+@mixin media-between($min, $max) {
+  @media (min-width: #{$min}px) and (max-width: #{$max}px) { @content; }
+}
+
+@mixin max-screen($max) {
+  @media (max-width: #{$max}px) { @content; }
 }

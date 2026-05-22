@@ -1,129 +1,143 @@
 @use "../utils/placeholders";
 @use "../utils/mixins";
+@use "../utils/variables";
 
 .hero {
-  background-color: #000;
+  background-color: #2f303a;
   text-align: center;
-  background-image: linear-gradient(rgba(76, 76, 77, 0.4), rgba(47, 48, 58, 0.4)), url("/img/fon.png");
+  padding: 118px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 200px;
-  padding: 120px 0;
-  background-size: auto;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero-tablet.png");
+  }
+
+  @include mixins.desktop() {
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/fon.png");
+  }
 }
+
 .container__title {
   color: #fff;
-  animation: appearance 1s ease-out;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.62;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @include mixins.desktop() {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
+
 .advantages {
   @include mixins.section-padding();
-  img {
-    width: 270px;
-    height: 224px;
-    top: 774px;
-    left: 515px;
-  }
+
   &__list {
     @extend %list;
     display: flex;
+    flex-direction: column;
     gap: 30px;
+
+    @include mixins.tablet() {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    @include mixins.tablet() {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @include mixins.desktop() {
+      width: calc((100% - 90px) / 4);
+    }
   }
 }
+
 .work__section {
-  @include mixins.section-padding();
+  display: none;
+
+  @include mixins.desktop() {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
+
 .work__list {
   @extend %list;
   display: flex;
   gap: 30px;
 }
-.work__item {
-  position: relative;
-  width: 370px;
-  img {
-    width: 100%;
-    display: block;
-  }
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin: 0;
-  @include mixins.transition(transform);
-}
+
 .team__section {
   @include mixins.section-padding();
   background: #f3f3f6;
 }
-.container__team {
-  display: flex;
-  gap: 0px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+
 .team__list {
   @extend %list;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
+
+  @include mixins.tablet() {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
 .team__item {
-  width: 270px;
+  width: 100%;
+  max-width: 450px;
   background: white;
   text-align: center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  img {
-    width: 100%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @include mixins.tablet() {
+    width: calc((100% - 30px) / 2);
   }
-}
-.team__card {
-  width: 195px;
-  background: white;
-  border: 1px solid #f8f3f3;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  @include mixins.transition(box-shadow);
-  &:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
+  @include mixins.desktop() {
+    width: calc((100% - 90px) / 4);
   }
+
   img {
     width: 100%;
     display: block;
   }
-  figcaption {
-    text-align: center;
-    padding: 15px;
-  }
-  h3 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-  }
-  p {
-    color: grey;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
 }
+
 .clients__list {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+
   li {
-    width: 170px;
+    width: calc((100% - 30px) / 2);
     height: 92px;
     border: 1px solid #afb1b8;
     @extend %flex-center;
-    margin-bottom: 50px;
+
+    @include mixins.tablet() {
+      width: calc((100% - 60px) / 3);
+    }
+
+    @include mixins.desktop() {
+      width: calc((100% - 150px) / 6);
+    }
   }
-}
-.clients__item img {
-  width: 106px;
-  height: 60px;
 }
